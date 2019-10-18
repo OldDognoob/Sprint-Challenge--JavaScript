@@ -8,23 +8,51 @@
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
+
+const tyrannosaurus = {
+  name: "tyrannosayrus",
+  diet: "carnivorous",
+  weight: 7000,
+  length: 12,
+  period: "Late Cretaceous"
+}
+
+
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
+const stegosaurus = {
+  name: "stegosaurus",
+  diet: "herbivorous",
+  weight: 2000,
+  length: 9,
+  period: "Late Jurassic"
+}
+
+
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+
+const velociraptor = {
+  name: "velociraptor",
+  diet: "carnivorous",
+  weight: 15,
+  length: 1.8,
+  period: "Late Cretaceous"
+
+}
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
@@ -52,6 +80,8 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
+
+
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
@@ -91,6 +121,10 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+
+zooAnimals.forEach((obj))=>
+
+
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -100,6 +134,12 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
+
+zooAnimals.map((obj)=>{
+  lower.Case.push(lowCaseAnimalNames.animal_name.toLowerCase());
+})
+
+
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
@@ -108,6 +148,10 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
+
+zooAnimals.filter((obj)=>{
+  lowPopulationAnimals.push(lowCaseAnimalNames.count<5);})
+
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
@@ -116,6 +160,9 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = 0;
+
+zooAnimals.reduce((populationTotal,zooAnimals)=>populationTotal + zooAnimals.count,0);
+
 console.log(populationTotal);
 
 
