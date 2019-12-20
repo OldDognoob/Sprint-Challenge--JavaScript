@@ -37,11 +37,12 @@ Edit this document to include your answers after each question. Make sure to lea
 2. What is the difference between a function and a method?
 
 A function is something that takes different data and returns one or more values.
-A method is a piece of code named by its associated object.
+A method is a function assosiated to an object. 
 
 3. What is closure?
 
-closure is the ability of a function to give access to variables in the same scope where the function is defined.
+<!-- closure is the ability of a function to give access to variables in the same scope where the function is defined. -->
+closure gives you access to the outside enviroment of the functions scope.
 
 4. Describe the four rules of the 'this' keyword.
 
@@ -51,7 +52,7 @@ The 4 rules of 'this keyword are:
   Mean that a function which belongs to the global scope, the value of 'this keyword of the that function will refer to global window.
 
   2.Implicit Binding
-  Can be valled also as "automatic binding" it means that 'this' keyword referes to the present project of the function.
+  Can be called also as "automatic binding" it means that 'this' keyword referes to the present object of the function.
 
   3. Explicity Binding
   It means using the call or apply methods, the 'this' keyword has its explicity.

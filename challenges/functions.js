@@ -26,8 +26,8 @@ function multiply(x, y) {
   return x * y;
 }
 
-function greeting(x, y){
-  return 'Hello ${x} ${y}, nice to meet you!'
+function greeting(firstName, lastName){
+  return `Hello ${firstName} ${lastName}, nice to meet you!`
 }
 
 
@@ -44,8 +44,8 @@ console.log(consume(10, 16, multiply)); // 160
 
 // Explanation: 
 
-// The reason why nested functions can access variables internally is to do with their scope. When you have a nested variable,'
-// it can access its parents vairables because it is within the scope of the function.
+// The reason why nested functions can access variables internally is to do with their scope. 
+// When you have a nested function, it can access its parents vairables because it is within the scope of the function.
 
 const external = "I'm outside the function";
 
