@@ -30,7 +30,9 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-The biggest difference between `.forEach` & `.map` is that map() method return values, return a new Array of the same size.
+-map() method, returns a new array which is the same length as the original. Every item in the original array takes transformation with the called procedure and past to the new array.
+
+-.forEach() method is similar to a loop. The called procedure here is  only performed once for each item within the array. But we dont have any new array so the value can not be stored.
 
 2. What is the difference between a function and a method?
 
@@ -59,7 +61,7 @@ The 4 rules of 'this keyword are:
 
 5. Why do we need super() in an extended class?
 
-    We need super to extend a class in JavaScript and with the helpt of super and extend we can do it.
+   We need Super()  because it is a keyword which is used in building classes. This super() function is called to allow child objects to have access to parent constructor properties.
     
 ## Project Set up
 
